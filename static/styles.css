@@ -1,0 +1,276 @@
+:root {
+    --logo-img-width: 3.5rem;
+
+    --background-color: #FDF4DC;
+    --main-color: #2d2d2e;
+    --highlight-color: #75bc62;
+    --color4: #8b8c8e;
+    --color5: #747c76;
+    --color6: #636364;
+    --color7: #6c6c74;
+    --color8: #a4a4ac;
+    --color9: #b4acb0;
+
+    --highlighted: var(--highlight-color)-2px 0px 1px;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+    padding: 0 0%;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+    padding: 2% 10%;
+    position: relative;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+
+.light-section {
+    background-color: white;
+}
+
+.highlighted {
+    text-shadow: var(--highlighted);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.emph {
+    /* text-shadow: var(--highlighted); */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section-title {
+    text-shadow: var(--highlighted);
+    font-family: 'Russo One', sans-serif;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+
+/* Title Section */
+#title {
+    padding: 1% 10% 0 8%;
+    text-align: left;
+}
+
+/* #title .container-fluid {
+    padding: 3% 15% 2%;
+    display: inline-block;
+    padding: 1% 10% 0 10%;
+    background-color: var(--background-color);
+    position: relative;
+} */
+
+.navbar {
+    background-color: var(--background-color);
+}
+
+.navbar-brand {
+    font-size: 3.6rem;
+    font-family: 'Russo One', sans-serif;
+    font-style: italic;
+    text-shadow: var(--highlight-color)-3px 0px 0px;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+.nav-link {
+    padding-bottom: 0;
+    opacity: 55%;
+}
+
+.nav-link:hover {
+    opacity: 100%;
+}
+
+
+
+/* Tag Line Section */
+#tag-line-section {
+    width: 70%;
+}
+
+#tag-line {
+    font-size: 2rem;
+}
+
+.contact-info {
+    display: inline;
+    color: var(--color4);
+    font-size: 1.5rem;
+}
+
+/* Services Section */
+#services {
+    min-height: 310px;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.feature-box {
+    padding: 0 4%;
+    border-radius: 50px;
+}
+
+.feature-box p {
+    color: var(--color9);
+}
+
+.feature-box .emph {
+    color: var(--color4);
+}
+
+.feature-box:hover {
+    background-color: var(--background-color);
+    
+}
+.feature-icon {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 3rem;
+}
+
+.feature-title {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+#tyre-safe {
+    font-weight: bold;
+}
+
+/* REVIEWS */
+#reviews {
+    color: var(--main-color);
+}
+
+.review-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+
+}
+
+.review-text {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* Opening Times */
+#opening-times-table-container {
+    padding: 0 30%;
+}
+
+#opening-times-table {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#opening-times a {
+    color: var(--highlight-color);
+}
+
+#opening-times p {
+    margin-top: 2%;
+}
+
+/* Facebook Section */
+.facebook-plugin-container {
+    position: relative;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Find Us Section */
+#find-us iframe {
+    height: 400px;
+    max-width: 500px;
+}
+
+#directions-form {
+    margin-bottom: 2%;
+}
+
+
+/* Footer */
+#footer {
+    color: var(--color9);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#footer p{
+    opacity: 60%;
+    padding: 0 0 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#footer .container-fluid {
+    padding: 0 0 0 0;
+}
+
+/* MEDIA BREAKPOINTS*/
+
+/* Most phones and tablets */
+@media (max-width: 600px) {
+
+    .navbar-brand  {
+        font-size: 2.7em;
+    }
+
+    #tag-line-section {
+        width: 80%;
+        
+    }
+
+    #tag-line {
+        font-size: 1.3em;
+    }
+
+    .review-text {
+        font-size: 1rem;
+    }
+    
+    #opening-times-table-container {
+        padding: 0 10%;
+    }
+
+    #find-us iframe {
+        height: 200px;
+        width: 100px
+    }  
+}
+
+@media (max-width: 370px) {
+
+    body {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .navbar-brand  {
+        font-size: 2.3em;
+    }
+}
+
